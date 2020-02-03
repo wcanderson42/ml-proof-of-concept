@@ -1,0 +1,12 @@
+<h1>Inbound Message Categorizer</h1>
+
+<div class = "sorting-container">
+    <mat-card>
+        <p>{{currentEntry}}</p> 
+        <mat-chip-list aria-label="Category selection">
+            <mat-chip *ngFor="let cat of categories" (click)='select(cat)'>
+                {{ cat }}
+            </mat-chip>
+      </mat-chip-list>
+    </mat-card>  
+</div>
